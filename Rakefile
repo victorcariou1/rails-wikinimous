@@ -4,3 +4,7 @@
 require_relative "config/application"
 
 Rails.application.load_tasks
+
+Rails.application.routes.draw do
+  resources :articles
+end
